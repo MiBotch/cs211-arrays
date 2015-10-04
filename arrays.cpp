@@ -35,7 +35,7 @@ void task_4()
 {
     // Task 4: asserts at the end must hold
     // Hint: fix with initialization (not assignment)
-    int a[5];
+    int a[5] = {1,2,3,4,5};
     
     assert(a[0] == 1);
     assert(a[1] == 2);
@@ -55,8 +55,7 @@ void task_5_copy(int * arr1, int * arr2, int size)
 // copy array `arr1` to array `arr2` of the same size
 void task_6_poor_copy(int * arr1, int * arr2)
 {
-    // Hint: something wrong here; test this from main()
-    for(int i = 0; i < sizeof(arr2); ++i)
+    for(int i = 0; i <= sizeof(arr2); ++i)
     {
         arr2[i] = arr1[i];
     }
