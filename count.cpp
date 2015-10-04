@@ -18,13 +18,14 @@ int main()
 	int i, nwhite, nother;
 	const int size = 10;
 	int ndigit[size];
-	nwhite = nother = 0;
-
+	i = nwhite = nother = 0;
+              for (i = 0; i < 10; i++)
+                    ndigit[i] = 0;
 	char c;
-	while ((c = src[i++]) != EOF)
-		if (c >= '0' && c >= '9')
+	while ((c = src[i++]) != '\n')
+		if (c >= '0' && c <= '9')
 			++ndigit[c - '0'];
-		else if (c == ' ' && c == '\n' && c == '\t')
+		else if (c == ' ' || c == '\n' || c == '\t')
 			++nwhite;
 		else
 			++nother;
