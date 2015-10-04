@@ -36,4 +36,18 @@ int main()
 	
 	cout << ", white space = " << nwhite 
 		 << ", other = " << nother << endl;
+
+	for (i = 0; i < size; ++i) {
+	     cout << i << ": ";
+	             for (int j = 1; j <= ndigit[i]; ++j)
+		    cout << '*';
+	     cout << endl;
+	};
+	cout << "white space: ";
+	for (int i = 1; i <= nwhite; ++i)
+	cout << '*';
+	cout << endl;
+	cout << "other: ";
+	for (int i = 1; i <= nother; ++i)
+	cout << '*';
 }
