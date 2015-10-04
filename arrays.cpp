@@ -6,12 +6,6 @@
 
 void task_1()
 {
-    /* Task 1: find a bug in the following declaration.
-     * It should help you to compile this with:
-     *   g++ -c -pedantic arrays.cpp                                   
-     * pedantic flag here means: strictly as in language standard 
-     * for explanation see:
-     *  https://gcc.gnu.org/onlinedocs/gcc/Variable-Length.html*/
     const int n = 10;
     int a[n];
 }
@@ -31,7 +25,7 @@ int task_3_zero()
     // Task 3
     // Hint 1: fix with initialization (not assignment)
     // Hint 2: you can use only one zero and not five of them! cf. task 2
-    int a[5];
+    int a[5] = {0};
     
     assert(!a[4]);
     return a[4]; // don't touch this!
