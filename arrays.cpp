@@ -12,7 +12,7 @@ void task_1()
      * pedantic flag here means: strictly as in language standard 
      * for explanation see:
      *  https://gcc.gnu.org/onlinedocs/gcc/Variable-Length.html*/
-    int n = 10;
+    const int n = 10;
     int a[n];
 }
 
